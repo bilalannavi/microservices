@@ -1,4 +1,4 @@
-package com.mo.ms.UserMicroService;
+package com.mo.ms.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
