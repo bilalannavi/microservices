@@ -1,15 +1,17 @@
-package com.mo.ms.user;
+package com.mo.ms.discoveryservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
+@EnableEurekaServer
 @RestController
-public class UserMicroServiceApplication {
+public class DiscoveryserviceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(UserMicroServiceApplication.class, args);
+		SpringApplication.run(DiscoveryserviceApplication.class, args);
 	}
 
 }
