@@ -1,8 +1,8 @@
-version: "3.9"
+version: "3"
 services:
 
   discoveryservice:
-    image: discoveryservice
+    image: bilalannavi/discoveryservice
     ports:
       - "8761:8761"
     networks:
@@ -16,9 +16,9 @@ services:
         condition: on-failure
 
   userservice:
-    image: userservice
+    image: bilalannavi/userservice
     ports:
-      - "5000"
+      - "8010:8010"
     networks:
       - backend
     depends_on:
@@ -32,7 +32,7 @@ services:
         condition: on-failure
 
   apigateway:
-    image: apigateway
+    image: bilalannavi/apigateway
     ports:
       - "8081:8081"
     networks:
